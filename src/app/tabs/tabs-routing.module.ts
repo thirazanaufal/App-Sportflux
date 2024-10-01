@@ -17,8 +17,8 @@ const routes: Routes = [
       loadChildren: () => import('../diagnose/diagnose.module').then( m => m.DiagnosePageModule)
     },
     {
-      path: 'login',
-      loadChildren: () => import('../login/login.module').then( m => m.LoginPageModule)
+      path: 'record',
+      loadChildren: () => import('../record/record.module').then( m => m.RecordPageModule)
     },
     {
       path: 'device',

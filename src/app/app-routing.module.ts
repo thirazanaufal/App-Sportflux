@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'device',
     loadChildren: () => import('./device/device.module').then( m => m.DevicePageModule)
   },
+  {
+    path: 'record',
+    loadChildren: () => import('./record/record.module').then( m => m.RecordPageModule)
+  },
 ];
 
 @NgModule({

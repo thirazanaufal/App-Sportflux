@@ -14,7 +14,7 @@ export class LoginPage {
 
   login() {
     // Cek username dan password
-    if (this.username === 'sportflux user 1' && this.password === '123') {
+    if (this.username === 'sportflux' && this.password === '123') {
       // Jika berhasil, arahkan ke halaman home
       this.router.navigate(['/home']);
     } else {
