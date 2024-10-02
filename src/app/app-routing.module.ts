@@ -42,6 +42,10 @@ const routes: Routes = [
     path: 'fisioterapis',
     loadChildren: () => import('./fisioterapis/fisioterapis.module').then( m => m.FisioterapisPageModule)
   },
+  {
+    path: 'message',
+    loadChildren: () => import('./message/message.module').then( m => m.MessagePageModule)
+  },
 ];
 
 @NgModule({
