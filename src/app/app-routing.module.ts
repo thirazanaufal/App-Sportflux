@@ -34,6 +34,14 @@ const routes: Routes = [
     path: 'record',
     loadChildren: () => import('./record/record.module').then( m => m.RecordPageModule)
   },
+  {
+    path: 'trainer',
+    loadChildren: () => import('./trainer/trainer.module').then( m => m.TrainerPageModule)
+  },
+  {
+    path: 'fisioterapis',
+    loadChildren: () => import('./fisioterapis/fisioterapis.module').then( m => m.FisioterapisPageModule)
+  },
 ];
 
 @NgModule({

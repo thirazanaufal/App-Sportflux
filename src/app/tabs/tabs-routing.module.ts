@@ -24,6 +24,14 @@ const routes: Routes = [
       path: 'device',
       loadChildren: () => import('../device/device.module').then( m => m.DevicePageModule)
     },
+    {
+      path: 'trainer',
+      loadChildren: () => import('../trainer/trainer.module').then( m => m.TrainerPageModule)
+    },
+    {
+      path: 'fisioterapis',
+      loadChildren: () => import('../fisioterapis/fisioterapis.module').then( m => m.FisioterapisPageModule)
+    },
     ]
   },
   {
