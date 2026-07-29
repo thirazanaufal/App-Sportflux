@@ -32,11 +32,15 @@ const routes: Routes = [
       path: 'fisioterapis',
       loadChildren: () => import('../fisioterapis/fisioterapis.module').then( m => m.FisioterapisPageModule)
     },
+    {
+      path: 'login',
+      loadChildren: () => import('../login/login.module').then( m => m.LoginPageModule)
+    },
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/login',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];
